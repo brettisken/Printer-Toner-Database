@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Save As" />
+              <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleAdd" text="Add" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleImport" text="Import" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="View">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handlePrinterView" text="Printers" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleTonerView" text="Toners" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
